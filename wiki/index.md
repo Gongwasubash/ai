@@ -17,6 +17,7 @@ Content-oriented catalog of everything in the wiki. Updated on every ingest.
 - [[Obsidian Agentic AI Access Controls]] — three-tier access (private/readonly/readwrite) for AI agents via Docker mounts
 - [[Antigravity Generative UI]] — agents build live working apps rendered inside chat using generative UI (Gemini 3.7 Flash)
 - [[Vaibhav Sisinty Second Brain Systems]] — 100M views content system: topic selection, packaging, scripting, posting with multi-agent orchestration
+- [[The Ultimate MCP Toolkit is here!]] — Piyush Garg's tutorial on Manufact: build, deploy, and monitor MCP servers with React views
 
 ## Entities
 
@@ -37,6 +38,7 @@ Content-oriented catalog of everything in the wiki. Updated on every ingest.
 - [[Vaibhav Sisinty]] — GrowthSchool founder, built 100M views content system with multi-agent orchestration
 - [[GrowthSchool]] — ed-tech company, AI upskilling (founded by Vaibhav Sisinty)
 - [[Metricool]] — social media scheduler with API, used as data harvesting layer for AI agents
+- [[Piyush Garg]] — Indian tech educator, Node.js/GenAI instructor, creator of Manufact MCP toolkit videos
 
 ## Concepts
 
@@ -60,6 +62,8 @@ Content-oriented catalog of everything in the wiki. Updated on every ingest.
 - [[Graph Memory]] — graph-based memory architecture that solves context rot (vs flat context windows)
 - [[Agent Council]] — multiple AI models verifying each other to prevent bias and cheating
 - [[Graph Engineering]] — isolated agent systems with specific tasks and cross-verification
+- [[MCP (Model Context Protocol)]] — universal protocol for AI assistants to connect to external tools and data
+- [[Manufact MCP Toolkit]] — full-stack toolkit for building, deploying, and monitoring MCP servers
 
 ## Analyses
 

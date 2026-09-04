@@ -141,3 +141,13 @@ Chronological record of wiki activity. Append-only.
 - Updated: [[index.md]]
 - Moved to: raw/processed/
 - Total pages touched: 14
+
+## [2026-09-04] ingest | The Ultimate MCP Toolkit is here!
+- Source: YouTube video by Piyush Garg (from Clippings/)
+- Created: [[The Ultimate MCP Toolkit is here!]] (source summary)
+- Created: [[Piyush Garg]] (entity)
+- Created: [[MCP (Model Context Protocol)]], [[Manufact MCP Toolkit]] (concepts)
+- Updated: [[index.md]]
+- Key takeaway: Manufact is a full-stack MCP toolkit (SDK + Cloud) for building, deploying, and monitoring MCP servers with React views support
+- Moved to: raw/processed/
+- Total pages touched: 6
