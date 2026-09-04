@@ -1,0 +1,26 @@
+# Obsidian
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+
+# Large data files
+raw/videos/
+raw/images/
+raw/audio/
+raw/*.zip
+raw/*.csv
+
+# YouTube Takeout (large)
+raw/processed/takeout-*/
+tools/youtube/takeout-*.zip
+
+# API keys
+.env
+tools/youtube/.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temp
+*.tmp
+*.bak
