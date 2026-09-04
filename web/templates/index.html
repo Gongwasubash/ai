@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Brain</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        :root {
+            --bg: #0f0f0f;
+            --surface: #1a1a1a;
+            --surface2: #242424;
+            --border: #333;
+            --text: #e0e0e0;
+            --text-dim: #888;
+            --accent: #7c5cfc;
+            --accent-dim: #5a3fd4;
+            --green: #4ade80;
+            --blue: #60a5fa;
+            --orange: #fb923c;
+            --pink: #f472b6;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            display: flex;
+            height: 100vh;
+        }
+        
+        /* Sidebar */
+        .sidebar {
+            width: 260px;
+            background: var(--surface);
+            border-right: 1px solid var(--border);
+            display: flex;
+            flex-direction: column;
+            flex-shrink: 0;
+        }
+        
+        .sidebar-header {
+            padding: 20px;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .sidebar-header h1 {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--accent);
+        }
+        
+        .sidebar-header p {
+            font-size: 11px;
+            color: var(--text-dim);
+            margin-top: 4px;
+        }
+        
+        .nav {
+            flex: 1;
+            overflow-y: auto;
+            padding: 12px;
+        }
+        
+        .nav-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 12px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            color: var(--text-dim);
+            transition: all 0.15s;
+        }
+        
+        .nav-item:hover { background: var(--surface2); color: var(--text); }
+        .nav-item.active { background: var(--accent); color: white; }
+        .nav-item .icon { font-size: 18px; width: 24px; text-align: center; }
+        .nav-item .badge {
+            margin-left: auto;
+            background: var(--surface2);
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 11px;
+        }
+        .nav-item.active .badge { background: var(--accent-dim); }
+        
+        .nav-section {
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-dim);
+            padding: 16px 12px 6px;
+        }
+        
+        /* Main Content */
+        .main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        
+        .header {
+            padding: 16px 24px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+        
+        .search-box {
+            flex: 1;
+            max-width: 500px;
+            position: relative;
+        }
+        
+        .search-box input {
+            width: 100%;
+            padding: 10px 16px 10px 40px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            color: var(--text);
+            font-size: 14px;
+            outline: none;
+        }
+        
+        .search-box input:focus { border-color: var(--accent); }
+        .search-box::before {
+            content: "🔍";
+            position: absolute;
+            left: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 14px;
+        }
+        
+        .content {
+            flex: 1;
+            overflow-y: auto;
+            padding: 24px;
+        }
+        
+        /* Cards */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 16px;
+        }
+        
+        .card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+            cursor: pointer;
+            transition: all 0.15s;
+        }
+        
+        .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+        .card h3 { font-size: 15px; margin-bottom: 8px; }
+        .card p { font-size: 13px; color: var(--text-dim); line-height: 1.5; }
+        .card .meta {
+            margin-top: 12px;
+            font-size: 11px;
+            color: var(--text-dim);
+            display: flex;
+            gap: 12px;
+        }
+        .card .tag {
+            display: inline-block;
+            background: var(--surface2);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 11px;
+            margin-right: 4px;
+        }
+        
+        /* Document View */
+        .doc-view {
+            max-width: 800px;
+        }
+        
+        .doc-view h1 { font-size: 28px; margin-bottom: 16px; }
+        .doc-view h2 { font-size: 20px; margin: 24px 0 12px; color: var(--accent); }
+        .doc-view h3 { font-size: 16px; margin: 16px 0 8px; }
+        .doc-view p { line-height: 1.7; margin-bottom: 12px; }
+        .doc-view ul, .doc-view ol { margin: 12px 0; padding-left: 24px; }
+        .doc-view li { margin-bottom: 6px; line-height: 1.6; }
+        .doc-view code {
+            background: var(--surface2);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 13px;
+        }
+        .doc-view pre {
+            background: var(--surface);
+            padding: 16px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 12px 0;
+        }
+        .doc-view blockquote {
+            border-left: 3px solid var(--accent);
+            padding-left: 16px;
+            color: var(--text-dim);
+            margin: 12px 0;
+        }
+        .doc-view a { color: var(--accent); text-decoration: none; }
+        .doc-view a:hover { text-decoration: underline; }
+        
+        /* Chat */
+        .chat-container {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        
+        .chat-messages {
+            flex: 1;
+            overflow-y: auto;
+            padding: 24px;
+        }
+        
+        .chat-msg {
+            max-width: 700px;
+            margin-bottom: 16px;
+        }
+        
+        .chat-msg.user { margin-left: auto; }
+        .chat-msg .bubble {
+            padding: 12px 16px;
+            border-radius: 12px;
+            font-size: 14px;
+            line-height: 1.6;
+            white-space: pre-wrap;
+        }
+        .chat-msg.user .bubble { background: var(--accent); color: white; }
+        .chat-msg.bot .bubble { background: var(--surface); border: 1px solid var(--border); }
+        .chat-msg .sources {
+            margin-top: 8px;
+            font-size: 11px;
+            color: var(--text-dim);
+        }
+        .chat-msg .sources span {
+            background: var(--surface2);
+            padding: 2px 6px;
+            border-radius: 4px;
+            margin-right: 4px;
+        }
+        
+        .chat-input {
+            padding: 16px 24px;
+            border-top: 1px solid var(--border);
+            display: flex;
+            gap: 12px;
+        }
+        
+        .chat-input input {
+            flex: 1;
+            padding: 12px 16px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            color: var(--text);
+            font-size: 14px;
+            outline: none;
+        }
+        
+        .chat-input input:focus { border-color: var(--accent); }
+        
+        .chat-input button {
+            padding: 12px 24px;
+            background: var(--accent);
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        
+        .chat-input button:hover { background: var(--accent-dim); }
+        
+        /* Stats */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+        
+        .stat-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .stat-card .number {
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--accent);
+        }
+        
+        .stat-card .label {
+            font-size: 12px;
+            color: var(--text-dim);
+            margin-top: 4px;
+        }
+        
+        /* Loading */
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: var(--text-dim);
+        }
+        
+        /* Mobile */
+        @media (max-width: 768px) {
+            .sidebar {
+                position: fixed;
+                left: -260px;
+                height: 100%;
+                z-index: 100;
+                transition: left 0.3s;
+            }
+            .sidebar.open { left: 0; }
+            .mobile-toggle {
+                display: block !important;
+                position: fixed;
+                top: 12px;
+                left: 12px;
+                z-index: 101;
+                background: var(--surface);
+                border: 1px solid var(--border);
+                border-radius: 8px;
+                padding: 8px 12px;
+                color: var(--text);
+                cursor: pointer;
+            }
+        }
+        
+        .mobile-toggle { display: none; }
+    </style>
+</head>
+<body>
+    <button class="mobile-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')">☰</button>
+    
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <h1>🧠 Second Brain</h1>
+            <p>Wiki • CRM • Journal</p>
+        </div>
+        <nav class="nav">
+            <div class="nav-item active" onclick="showView('home')">
+                <span class="icon">🏠</span> Home
+            </div>
+            <div class="nav-item" onclick="showView('wiki')">
+                <span class="icon">📚</span> Wiki
+                <span class="badge" id="wiki-count">-</span>
+            </div>
+            <div class="nav-item" onclick="showView('crm')">
+                <span class="icon">👥</span> CRM
+                <span class="badge" id="crm-count">-</span>
+            </div>
+            <div class="nav-item" onclick="showView('journal')">
+                <span class="icon">📝</span> Journal
+                <span class="badge" id="journal-count">-</span>
+            </div>
+            <div class="nav-item" onclick="showView('chat')">
+                <span class="icon">💬</span> Chat with Data
+            </div>
+            
+            <div class="nav-section">Wiki Sections</div>
+            <div class="nav-item" onclick="showView('wiki', 'sources')">
+                <span class="icon">📄</span> Sources
+            </div>
+            <div class="nav-item" onclick="showView('wiki', 'entities')">
+                <span class="icon">🏷️</span> Entities
+            </div>
+            <div class="nav-item" onclick="showView('wiki', 'concepts')">
+                <span class="icon">💡</span> Concepts
+            </div>
+            <div class="nav-item" onclick="showView('wiki', 'analyses')">
+                <span class="icon">📊</span> Analyses
+            </div>
+        </nav>
+    </aside>
+    
+    <main class="main">
+        <div class="header">
+            <div class="search-box">
+                <input type="text" id="search" placeholder="Search your second brain..." onkeyup="handleSearch(event)">
+            </div>
+        </div>
+        <div class="content" id="content">
+            <div class="loading">Loading...</div>
+        </div>
+    </main>
+    
+    <script>
+        let currentView = 'home';
+        
+        // ─── API ──────────────────────────────────────────────
+        async function api(endpoint) {
+            const res = await fetch(endpoint);
+            return res.json();
+        }
+        
+        async function apiPost(endpoint, data) {
+            const res = await fetch(endpoint, {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify(data)
+            });
+            return res.json();
+        }
+        
+        // ─── Views ────────────────────────────────────────────
+        async function showView(view, subview) {
+            currentView = view;
+            document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+            event?.target?.closest('.nav-item')?.classList.add('active');
+            
+            const content = document.getElementById('content');
+            content.innerHTML = '<div class="loading">Loading...</div>';
+            
+            switch(view) {
+                case 'home': await renderHome(content); break;
+                case 'wiki': await renderWiki(content, subview); break;
+                case 'crm': await renderCRM(content); break;
+                case 'journal': await renderJournal(content); break;
+                case 'chat': renderChat(content); break;
+            }
+        }
+        
+        async function renderHome(el) {
+            const stats = await api('/api/stats');
+            el.innerHTML = `
+                <h2 style="margin-bottom: 24px">Dashboard</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="number">${stats.wiki_pages}</div>
+                        <div class="label">Wiki Pages</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="number">${stats.crm_contacts}</div>
+                        <div class="label">CRM Contacts</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="number">${stats.journal_entries}</div>
+                        <div class="label">Journal Entries</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="number">${stats.raw_sources}</div>
+                        <div class="label">Raw Sources</div>
+                    </div>
+                </div>
+                <h3 style="margin-bottom: 12px">Recent Activity</h3>
+                <div id="recent-log" style="background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px; font-size: 13px; line-height: 1.8; max-height: 400px; overflow-y: auto;">Loading...</div>
+            `;
+            
+            const log = await api('/api/log');
+            const lines = log.content.split('\n').slice(-20).join('\n');
+            document.getElementById('recent-log').innerHTML = renderMarkdown(lines);
+        }
+        
+        async function renderWiki(el, subdir) {
+            const files = subdir ? await api(`/api/wiki/${subdir}`) : await api('/api/wiki');
+            el.innerHTML = `
+                <h2 style="margin-bottom: 24px">${subdir ? subdir.charAt(0).toUpperCase() + subdir.slice(1) : 'All Wiki Pages'}</h2>
+                <div class="card-grid">
+                    ${files.map(f => `
+                        <div class="card" onclick="showDoc('${f.category || ''}', '${f.name}')">
+                            <h3>${f.title}</h3>
+                            <p>${f.preview}</p>
+                            <div class="meta">
+                                <span>${f.category || 'wiki'}</span>
+                                <span>${f.modified?.split('T')[0] || ''}</span>
+                            </div>
+                        </div>
+                    `).join('')}
+                </div>
+            `;
+        }
+        
+        async function showDoc(subdir, name) {
+            const content = document.getElementById('content');
+            content.innerHTML = '<div class="loading">Loading...</div>';
+            
+            const path = subdir ? `${subdir}/${name}` : name;
+            const doc = await api(`/api/wiki/read/${path}`);
+            
+            content.innerHTML = `
+                <div class="doc-view">
+                    <div style="margin-bottom: 16px">
+                        <a href="#" onclick="showView('wiki', '${subdir}'); return false;" style="color: var(--accent); font-size: 13px">← Back to ${subdir || 'Wiki'}</a>
+                    </div>
+                    ${renderMarkdown(doc.content)}
+                </div>
+            `;
+        }
+        
+        async function renderCRM(el) {
+            const data = await api('/api/crm');
+            el.innerHTML = `
+                <h2 style="margin-bottom: 24px">CRM Contacts</h2>
+                <div class="card-grid">
+                    ${data.contacts.map(c => `
+                        <div class="card" onclick="showCRMContact('${c.name}')">
+                            <h3>${c.title}</h3>
+                            <p>${c.preview}</p>
+                            <div class="meta">
+                                <span>${c.modified?.split('T')[0] || ''}</span>
+                            </div>
+                        </div>
+                    `).join('')}
+                </div>
+            `;
+        }
+        
+        async function showCRMContact(name) {
+            const content = document.getElementById('content');
+            content.innerHTML = '<div class="loading">Loading...</div>';
+            const doc = await api(`/api/crm/read/${name}`);
+            content.innerHTML = `
+                <div class="doc-view">
+                    <div style="margin-bottom: 16px">
+                        <a href="#" onclick="showView('crm'); return false;" style="color: var(--accent); font-size: 13px">← Back to CRM</a>
+                    </div>
+                    ${renderMarkdown(doc.content)}
+                </div>
+            `;
+        }
+        
+        async function renderJournal(el) {
+            const data = await api('/api/journal');
+            el.innerHTML = `
+                <h2 style="margin-bottom: 24px">Journal</h2>
+                <div class="card-grid">
+                    ${data.entries.map(e => `
+                        <div class="card" onclick="showJournalEntry('${e.name}')">
+                            <h3>${e.title}</h3>
+                            <p>${e.preview}</p>
+                            <div class="meta">
+                                <span>${e.modified?.split('T')[0] || ''}</span>
+                            </div>
+                        </div>
+                    `).join('')}
+                </div>
+            `;
+        }
+        
+        async function showJournalEntry(name) {
+            const content = document.getElementById('content');
+            content.innerHTML = '<div class="loading">Loading...</div>';
+            const doc = await api(`/api/journal/read/${name}`);
+            content.innerHTML = `
+                <div class="doc-view">
+                    <div style="margin-bottom: 16px">
+                        <a href="#" onclick="showView('journal'); return false;" style="color: var(--accent); font-size: 13px">← Back to Journal</a>
+                    </div>
+                    ${renderMarkdown(doc.content)}
+                </div>
+            `;
+        }
+        
+        function renderChat(el) {
+            el.innerHTML = `
+                <div class="chat-container">
+                    <div class="chat-messages" id="chat-messages">
+                        <div class="chat-msg bot">
+                            <div class="bubble">Hi! I'm your Second Brain assistant. Ask me anything about your wiki, contacts, or journal entries.</div>
+                        </div>
+                    </div>
+                    <div class="chat-input">
+                        <input type="text" id="chat-input" placeholder="Ask about your data..." onkeydown="if(event.key==='Enter')sendChat()">
+                        <button onclick="sendChat()">Send</button>
+                    </div>
+                </div>
+            `;
+        }
+        
+        async function sendChat() {
+            const input = document.getElementById('chat-input');
+            const msg = input.value.trim();
+            if (!msg) return;
+            
+            const messages = document.getElementById('chat-messages');
+            messages.innerHTML += `<div class="chat-msg user"><div class="bubble">${escapeHtml(msg)}</div></div>`;
+            input.value = '';
+            messages.innerHTML += `<div class="chat-msg bot" id="typing"><div class="bubble">Searching...</div></div>`;
+            messages.scrollTop = messages.scrollHeight;
+            
+            const res = await apiPost('/api/chat', {message: msg});
+            document.getElementById('typing')?.remove();
+            
+            let sourcesHtml = '';
+            if (res.sources?.length) {
+                sourcesHtml = `<div class="sources">${res.sources.map(s => `<span>${s}</span>`).join('')}</div>`;
+            }
+            
+            messages.innerHTML += `<div class="chat-msg bot"><div class="bubble">${escapeHtml(res.response)}</div>${sourcesHtml}</div>`;
+            messages.scrollTop = messages.scrollHeight;
+        }
+        
+        // ─── Search ────────────────────────────────────────────
+        async function handleSearch(e) {
+            if (e.key !== 'Enter') return;
+            const query = e.target.value.trim();
+            if (!query) return;
+            
+            const content = document.getElementById('content');
+            content.innerHTML = '<div class="loading">Searching...</div>';
+            const results = await api(`/api/search?q=${encodeURIComponent(query)}`);
+            
+            content.innerHTML = `
+                <h2 style="margin-bottom: 24px">Search Results for "${query}"</h2>
+                <div class="card-grid">
+                    ${results.map(r => `
+                        <div class="card" onclick="openSearchResult('${r.path}')">
+                            <h3>${r.file}</h3>
+                            <p>${r.matches.map(m => m.text).join('<br>')}</p>
+                            <div class="meta"><span>${r.path}</span></div>
+                        </div>
+                    `).join('')}
+                </div>
+            `;
+        }
+        
+        function openSearchResult(path) {
+            const parts = path.split(/[\\/]/);
+            const name = parts.pop().replace('.md', '');
+            const subdir = parts.length > 1 ? parts[parts.length - 1] : '';
+            
+            if (path.startsWith('crm')) showCRMContact(name);
+            else if (path.startsWith('journal')) showJournalEntry(name);
+            else showDoc(subdir, name);
+        }
+        
+        // ─── Utils ────────────────────────────────────────────
+        function renderMarkdown(text) {
+            if (!text) return '';
+            return text
+                .replace(/^### (.+)$/gm, '<h3>$1</h3>')
+                .replace(/^## (.+)$/gm, '<h2>$1</h2>')
+                .replace(/^# (.+)$/gm, '<h1>$1</h1>')
+                .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+                .replace(/\*(.+?)\*/g, '<em>$1</em>')
+                .replace(/`(.+?)`/g, '<code>$1</code>')
+                .replace(/\[\[(.+?)\]\]/g, '<a href="#" onclick="searchFor(\'$1\'); return false;">$1</a>')
+                .replace(/^- (.+)$/gm, '<li>$1</li>')
+                .replace(/(<li>.*<\/li>\n?)+/g, '<ul>$&</ul>')
+                .replace(/\n\n/g, '</p><p>')
+                .replace(/\n/g, '<br>');
+        }
+        
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+        
+        function searchFor(query) {
+            document.getElementById('search').value = query;
+            handleSearch({key: 'Enter'});
+        }
+        
+        // ─── Init ──────────────────────────────────────────────
+        async function init() {
+            const stats = await api('/api/stats');
+            document.getElementById('wiki-count').textContent = stats.wiki_pages;
+            document.getElementById('crm-count').textContent = stats.crm_contacts;
+            document.getElementById('journal-count').textContent = stats.journal_entries;
+            
+            showView('home');
+        }
+        
+        init();
+    </script>
+</body>
+</html>
