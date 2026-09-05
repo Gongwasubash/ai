@@ -156,3 +156,14 @@ Chronological record of wiki activity. Append-only.
 ## [2026-09-05] journal | 2026-09-05 Terminal Captures — Began learning guitar today.
 ## [2026-09-05] journal | 2026-09-05 Terminal Captures — You started learning guitar today.
 ## [2026-09-05] journal | 2026-09-05 Terminal Captures — Meeting a friend in Kathmandu to discuss a project.
+
+## [2026-09-05] ingest | Nepal's Most Terrifying Flood | WSO | Binayak Kuikel
+- Source: YouTube video by Why So Offended ? (from Clippings/)
+- Created: [[Nepal's Most Terrifying Flood | WSO | Binayak Kuikel]] (source summary)
+- Created: [[Why So Offended ?]], [[Binayak Kuikel]], [[Bhote Koshi Flood 2026]] (entities)
+- Created: [[Glacial Collapse Flood]], [[Early Warning Failure]], [[Climate Justice]] (concepts)
+- Updated: [[index.md]]
+- Key takeaway: Bhadra-10 Bhote Koshi flood from Langtang glacial collapse (4.4 seismic signal); Timure erased in seconds; alert came ~15 min late and without scale; Nepal's climate-justice case — negligible emissions, outsized damage
+- Flag: Trishuli 3B status disputed across outlets; death toll evolving — needs follow-up source
+- Moved to: raw/processed/
+- Total pages touched: 10

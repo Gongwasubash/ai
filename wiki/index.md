@@ -18,6 +18,7 @@ Content-oriented catalog of everything in the wiki. Updated on every ingest.
 - [[Antigravity Generative UI]] — agents build live working apps rendered inside chat using generative UI (Gemini 3.7 Flash)
 - [[Vaibhav Sisinty Second Brain Systems]] — 100M views content system: topic selection, packaging, scripting, posting with multi-agent orchestration
 - [[The Ultimate MCP Toolkit is here!]] — Piyush Garg's tutorial on Manufact: build, deploy, and monitor MCP servers with React views
+- [[Nepal's Most Terrifying Flood | WSO | Binayak Kuikel]] — WSO documentary on the Bhadra-10 Bhote Koshi glacial-collapse flood: timeline, response audit, climate justice
 
 ## Entities
 
@@ -39,6 +40,9 @@ Content-oriented catalog of everything in the wiki. Updated on every ingest.
 - [[GrowthSchool]] — ed-tech company, AI upskilling (founded by Vaibhav Sisinty)
 - [[Metricool]] — social media scheduler with API, used as data harvesting layer for AI agents
 - [[Piyush Garg]] — Indian tech educator, Node.js/GenAI instructor, creator of Manufact MCP toolkit videos
+- [[Why So Offended ?]] — Nepali YouTube explainer channel, long-form disaster/current-affairs documentaries
+- [[Binayak Kuikel]] — co-writer of WSO's Bhote Koshi flood documentary
+- [[Bhote Koshi Flood 2026]] — Bhadra-10 glacial-collapse flash flood that erased Timure market
 
 ## Concepts
 
@@ -64,6 +68,9 @@ Content-oriented catalog of everything in the wiki. Updated on every ingest.
 - [[Graph Engineering]] — isolated agent systems with specific tasks and cross-verification
 - [[MCP (Model Context Protocol)]] — universal protocol for AI assistants to connect to external tools and data
 - [[Manufact MCP Toolkit]] — full-stack toolkit for building, deploying, and monitoring MCP servers
+- [[Glacial Collapse Flood]] — rainless flood from falling glacier ice + bedrock liquefying into a debris surge
+- [[Early Warning Failure]] — forecast existing but alert too late and without scale: detection, dissemination, coordination gaps
+- [[Climate Justice]] — negligible emitters owed support by major polluters; Nepal's advocacy case
 
 ## Analyses
 
