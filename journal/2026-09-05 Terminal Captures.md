@@ -14,3 +14,7 @@ today i am building terminal based agent by conneting opencode zen model from in
 ## 17:00 NPT
 
 workflow test: terminal now follows the full second brain pipeline
+
+## 17:24 NPT
+
+Started learning guitar today.
