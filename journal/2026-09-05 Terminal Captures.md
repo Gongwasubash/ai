@@ -10,3 +10,7 @@ tags:
 ## 16:55 NPT
 
 today i am building terminal based agent by conneting opencode zen model from intrenet so i can update my second brain
+
+## 17:00 NPT
+
+workflow test: terminal now follows the full second brain pipeline
