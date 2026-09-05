@@ -154,3 +154,4 @@ Chronological record of wiki activity. Append-only.
 
 ## [2026-09-05] journal | 2026-09-05 Terminal Captures — Terminal now executes the full second brain pipeline.
 ## [2026-09-05] journal | 2026-09-05 Terminal Captures — Began learning guitar today.
+## [2026-09-05] journal | 2026-09-05 Terminal Captures — You started learning guitar today.
