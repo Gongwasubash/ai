@@ -18,3 +18,9 @@ workflow test: terminal now follows the full second brain pipeline
 ## 17:24 NPT
 
 Started learning guitar today.
+
+## 17:24 NPT
+
+Started learning guitar today.
+
+You asked me to remember that you started learning guitar today.
