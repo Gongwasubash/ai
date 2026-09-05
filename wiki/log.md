@@ -151,3 +151,5 @@ Chronological record of wiki activity. Append-only.
 - Key takeaway: Manufact is a full-stack MCP toolkit (SDK + Cloud) for building, deploying, and monitoring MCP servers with React views support
 - Moved to: raw/processed/
 - Total pages touched: 6
+
+## [2026-09-05] journal | 2026-09-05 Terminal Captures — Terminal now executes the full second brain pipeline.
