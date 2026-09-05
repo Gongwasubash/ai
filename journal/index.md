@@ -8,4 +8,4 @@ Chronological log of journal entries.
 
 ## 2026-09-05
 
-- [[2026-09-05 Terminal Captures]] — quick captures from web terminal.
+- [[2026-09-05 Terminal Captures]] — Began learning guitar today.
