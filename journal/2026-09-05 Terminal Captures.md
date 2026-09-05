@@ -22,3 +22,7 @@ Started learning guitar today.
 ## 17:24 NPT
 
 Started learning guitar today.
+
+## 17:30 NPT
+
+Today I'm traveling to Kathmandu to meet an old friend, and we will discuss a new project together.
