@@ -167,3 +167,14 @@ Chronological record of wiki activity. Append-only.
 - Flag: Trishuli 3B status disputed across outlets; death toll evolving — needs follow-up source
 - Moved to: raw/processed/
 - Total pages touched: 10
+
+## [2026-09-05] ingest | Hermes Agent - Full Tutorial & Setup Guide (For Beginners)
+- Source: YouTube video by Metics Media (from Clippings/)
+- Created: [[Hermes Agent Beginner Tutorial]] (source summary)
+- Created: [[Metics Media]], [[Nous Research]] (entities)
+- Created: [[Context Economics]] (concept)
+- Updated: [[Hermes Agent]] (VPS path, costs, contradiction flag vs Sept-4 free-API struggle)
+- Updated: [[index.md]]
+- Key takeaway: working Hermes path is cheap-paid not free — $6/mo KVM1 + $5 OpenRouter + DeepSeek-V4-Flash (13¢/105 reqs via 75% cache); teachable memory + self-written skills/cron verified on video
+- Moved to: raw/processed/
+- Total pages touched: 7

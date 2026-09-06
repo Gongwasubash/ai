@@ -7,6 +7,7 @@ sources:
   - "[[Hermes Desktop App Setup]]"
   - "[[AI Second Brain for Hermes Agent]]"
   - "[[Obsidian Agentic AI Access Controls]]"
+  - "[[Hermes Agent Beginner Tutorial]]"
 ---
 
 # Hermes Agent
@@ -48,9 +49,24 @@ Self-improving AI agent framework by Nous Research. Available as desktop app. Le
 - Three-tier access: private, read-only, read-write
 - Profile-based access for different models
 
+## Proven VPS Path (Metics Media, Aug 2026)
+
+- Hostinger KVM 1 (~$6/mo) one-click template; desktop app attaches as remote gateway (server URL before `/endpoints`)
+- OpenRouter $5 start, $10/week key limit, DeepSeek-V4-Flash main; Nous Portal ~$20/mo flat alternative
+- Measured: 105 requests ≈ 4M tokens ≈ 13¢ (75% cache hits) — see [[Context Economics]]
+- Telegram QR channel + allowlist; `/set home` for cron results; permission prompts on risky actions
+- Correction-to-memory demo verified; self-written skills + cron ("messages first"); `Hermes Doctor` for health
+
+## Contradiction Flag
+
+- Sept-4 journal bet on free providers (Ollama/NVIDIA/OpenCode) and found them too weak for agent work — this source resolves it: the working path is cheap-paid, not free
+
 ## Related
 
 - [[OpenRouter]]
+- [[Nous Research]]
+- [[Metics Media]]
+- [[Context Economics]]
 - [[Second Brain]]
 - [[LLM Wiki]]
 - [[Sub-Agents]]

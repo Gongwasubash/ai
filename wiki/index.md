@@ -19,6 +19,7 @@ Content-oriented catalog of everything in the wiki. Updated on every ingest.
 - [[Vaibhav Sisinty Second Brain Systems]] — 100M views content system: topic selection, packaging, scripting, posting with multi-agent orchestration
 - [[The Ultimate MCP Toolkit is here!]] — Piyush Garg's tutorial on Manufact: build, deploy, and monitor MCP servers with React views
 - [[Nepal's Most Terrifying Flood | WSO | Binayak Kuikel]] — WSO documentary on the Bhadra-10 Bhote Koshi glacial-collapse flood: timeline, response audit, climate justice
+- [[Hermes Agent Beginner Tutorial]] — Metics Media zero-to-running Hermes build: Hostinger VPS, OpenRouter + DeepSeek, Telegram, teachable memory, costs
 
 ## Entities
 
@@ -43,6 +44,8 @@ Content-oriented catalog of everything in the wiki. Updated on every ingest.
 - [[Why So Offended ?]] — Nepali YouTube explainer channel, long-form disaster/current-affairs documentaries
 - [[Binayak Kuikel]] — co-writer of WSO's Bhote Koshi flood documentary
 - [[Bhote Koshi Flood 2026]] — Bhadra-10 glacial-collapse flash flood that erased Timure market
+- [[Metics Media]] — AI agent tutorial creator (Matt), Hermes beginner guides
+- [[Nous Research]] — team behind Hermes models and Hermes Agent framework
 
 ## Concepts
 
@@ -71,6 +74,7 @@ Content-oriented catalog of everything in the wiki. Updated on every ingest.
 - [[Glacial Collapse Flood]] — rainless flood from falling glacier ice + bedrock liquefying into a debris surge
 - [[Early Warning Failure]] — forecast existing but alert too late and without scale: detection, dissemination, coordination gaps
 - [[Climate Justice]] — negligible emitters owed support by major polluters; Nepal's advocacy case
+- [[Context Economics]] — agent turns resend ~38K tokens but cache makes 4M tokens cost 13¢
 
 ## Analyses
 
