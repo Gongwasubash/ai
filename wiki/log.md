@@ -188,3 +188,13 @@ Chronological record of wiki activity. Append-only.
 - Key takeaway: full no-After-Effects video pipeline (Claude breakdown → Flow/Omni clips → ElevenLabs → CapCut) plus face/voice locking for recurring AI presenters — directly reusable for Mahispal-style explainers
 - Moved to: raw/processed/
 - Total pages touched: 9
+
+## [2026-09-06] ingest | Storyboard to AI UGC Ad (Klever Nuts AI)
+- Source: YouTube video by Klever Nuts AI (from Clippings/)
+- Created: [[Storyboard to AI UGC Ad]] (source summary)
+- Created: [[Klever Nuts AI]] (entity)
+- Updated: [[Google Flow]] (Agent mode, persona generator, voice changer), [[Consistent AI Character]] (ID sheet, copyright-safe casting)
+- Updated: [[index.md]]
+- Key takeaway: Flow Agent turns one storyboard + prompt into a full 30s UGC ad in ~1 min; ID-sheet + ElevenLabs voice-changer are the consistency/polish unlocks
+- Moved to: raw/processed/
+- Total pages touched: 6

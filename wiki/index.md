@@ -22,6 +22,7 @@ Content-oriented catalog of everything in the wiki. Updated on every ingest.
 - [[Hermes Agent Beginner Tutorial]] — Metics Media zero-to-running Hermes build: Hostinger VPS, OpenRouter + DeepSeek, Telegram, teachable memory, costs
 - [[AI Talking Head Avatars]] — Case Studio Google Flow workflow: locked face + custom accent voice, 32-word clips, bracket action cues
 - [[Viral 3D Motion Graphics Recreation]] — Case Studio Claude breakdown → Omni 1.1 Flash clips → ElevenLabs VO → CapCut, plus style repurposing
+- [[Storyboard to AI UGC Ad]] — Klever Nuts AI storyboard → Flow Agent auto-split clips, ID-sheet character, voice-changer polish
 
 ## Entities
 
@@ -50,6 +51,7 @@ Content-oriented catalog of everything in the wiki. Updated on every ingest.
 - [[Nous Research]] — team behind Hermes models and Hermes Agent framework
 - [[Case Studio]] — AI video-workflow educator (Google Flow/Omni tutorials)
 - [[Google Flow]] — Google AI filmmaking tool with persistent face + voice characters
+- [[Klever Nuts AI]] — AI UGC-ad educator, storyboard-driven Flow Agent commercials
 
 ## Concepts
 
