@@ -178,3 +178,13 @@ Chronological record of wiki activity. Append-only.
 - Key takeaway: working Hermes path is cheap-paid not free — $6/mo KVM1 + $5 OpenRouter + DeepSeek-V4-Flash (13¢/105 reqs via 75% cache); teachable memory + self-written skills/cron verified on video
 - Moved to: raw/processed/
 - Total pages touched: 7
+
+## [2026-09-06] ingest | Case Studio batch (2 videos)
+- Source: 2 YouTube videos by Case Studio (from Clippings/)
+- Created: [[AI Talking Head Avatars]], [[Viral 3D Motion Graphics Recreation]] (source summaries)
+- Created: [[Case Studio]], [[Google Flow]] (entities)
+- Created: [[Consistent AI Character]], [[Viral Style Repurposing]] (concepts)
+- Updated: [[index.md]]
+- Key takeaway: full no-After-Effects video pipeline (Claude breakdown → Flow/Omni clips → ElevenLabs → CapCut) plus face/voice locking for recurring AI presenters — directly reusable for Mahispal-style explainers
+- Moved to: raw/processed/
+- Total pages touched: 9

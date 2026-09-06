@@ -20,6 +20,8 @@ Content-oriented catalog of everything in the wiki. Updated on every ingest.
 - [[The Ultimate MCP Toolkit is here!]] — Piyush Garg's tutorial on Manufact: build, deploy, and monitor MCP servers with React views
 - [[Nepal's Most Terrifying Flood | WSO | Binayak Kuikel]] — WSO documentary on the Bhadra-10 Bhote Koshi glacial-collapse flood: timeline, response audit, climate justice
 - [[Hermes Agent Beginner Tutorial]] — Metics Media zero-to-running Hermes build: Hostinger VPS, OpenRouter + DeepSeek, Telegram, teachable memory, costs
+- [[AI Talking Head Avatars]] — Case Studio Google Flow workflow: locked face + custom accent voice, 32-word clips, bracket action cues
+- [[Viral 3D Motion Graphics Recreation]] — Case Studio Claude breakdown → Omni 1.1 Flash clips → ElevenLabs VO → CapCut, plus style repurposing
 
 ## Entities
 
@@ -46,6 +48,8 @@ Content-oriented catalog of everything in the wiki. Updated on every ingest.
 - [[Bhote Koshi Flood 2026]] — Bhadra-10 glacial-collapse flash flood that erased Timure market
 - [[Metics Media]] — AI agent tutorial creator (Matt), Hermes beginner guides
 - [[Nous Research]] — team behind Hermes models and Hermes Agent framework
+- [[Case Studio]] — AI video-workflow educator (Google Flow/Omni tutorials)
+- [[Google Flow]] — Google AI filmmaking tool with persistent face + voice characters
 
 ## Concepts
 
@@ -75,6 +79,8 @@ Content-oriented catalog of everything in the wiki. Updated on every ingest.
 - [[Early Warning Failure]] — forecast existing but alert too late and without scale: detection, dissemination, coordination gaps
 - [[Climate Justice]] — negligible emitters owed support by major polluters; Nepal's advocacy case
 - [[Context Economics]] — agent turns resend ~38K tokens but cache makes 4M tokens cost 13¢
+- [[Consistent AI Character]] — locked face + voice + behavior across clips for AI presenter series
+- [[Viral Style Repurposing]] — keep a proven video's visual DNA, swap in your own narration
 
 ## Analyses
 
