@@ -23,6 +23,8 @@ Content-oriented catalog of everything in the wiki. Updated on every ingest.
 - [[AI Talking Head Avatars]] — Case Studio Google Flow workflow: locked face + custom accent voice, 32-word clips, bracket action cues
 - [[Viral 3D Motion Graphics Recreation]] — Case Studio Claude breakdown → Omni 1.1 Flash clips → ElevenLabs VO → CapCut, plus style repurposing
 - [[Storyboard to AI UGC Ad]] — Klever Nuts AI storyboard → Flow Agent auto-split clips, ID-sheet character, voice-changer polish
+- [[Jack Roberts Shorts Batch]] — 8 free-tool shorts: skill-retrieval MCP, 280 agent employees, Apple-design skill, Chat Cut, Refero Styles, Fish Audio
+- [[FDE Course GenAI Basics]] — Coder Army Hindi lecture: deterministic code → ML classification → transformers → GPT
 
 ## Entities
 
@@ -52,6 +54,9 @@ Content-oriented catalog of everything in the wiki. Updated on every ingest.
 - [[Case Studio]] — AI video-workflow educator (Google Flow/Omni tutorials)
 - [[Google Flow]] — Google AI filmmaking tool with persistent face + voice characters
 - [[Klever Nuts AI]] — AI UGC-ad educator, storyboard-driven Flow Agent commercials
+- [[Jack Roberts]] — short-form free-AI-tool educator
+- [[Fish Audio]] — voice clone + per-line bracket direction, 83 languages
+- [[Coder Army]] — Hindi FDE lecture series (GenAI → Agents → Vector DBs)
 
 ## Concepts
 

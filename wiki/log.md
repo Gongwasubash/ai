@@ -198,3 +198,12 @@ Chronological record of wiki activity. Append-only.
 - Key takeaway: Flow Agent turns one storyboard + prompt into a full 30s UGC ad in ~1 min; ID-sheet + ElevenLabs voice-changer are the consistency/polish unlocks
 - Moved to: raw/processed/
 - Total pages touched: 6
+
+## [2026-09-08] ingest | Clippings batch (9 files)
+- Source: 8 Jack Roberts shorts + Coder Army FDE #1 (from Clippings/)
+- Created: [[Jack Roberts Shorts Batch]], [[FDE Course GenAI Basics]] (source summaries)
+- Created: [[Jack Roberts]], [[Fish Audio]], [[Coder Army]] (entities)
+- Updated: [[index.md]]
+- Key takeaway: retrieve-don't-build pattern (89k-skill MCP, 280-agent repo, 2000-style MD files) + bracket-tag directing for voice AND body + FDE ladder from deterministic code to GPT
+- Moved to: raw/processed/
+- Total pages touched: 7
