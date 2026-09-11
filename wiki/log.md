@@ -305,3 +305,10 @@ Chronological record of wiki activity. Append-only.
 - Updated: [[index.md]]
 - Key takeaway: face RECOGNITION (not just detection); train OpenCV LBPH model on your own photos; label familiar vs unknown faces; everything runs locally with no cloud dependency
 - Total pages touched: 3
+## [2026-09-11] ingest | How to Generate UNLIMITED AI Pictures Inside Claude
+- Source: YouTube video by AsapGuide (from Clippings/)
+- Created: [[How to Generate UNLIMITED AI Pictures Inside Claude]] (source summary)
+- Created: [[AsapGuide]], [[Cloudflare Workers AI]] (entities)
+- Updated: [[index.md]]
+- Key takeaway: Claude can generate images via Cloudflare Workers AI MCP connector using Flux model; 10,000 free credits/day; setup: Cloudflare account, Workers AI, MCP config in Claude settings, bearer token auth
+- Total pages touched: 4
