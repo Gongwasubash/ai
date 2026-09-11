@@ -279,3 +279,29 @@ Chronological record of wiki activity. Append-only.
 - Configured: life theme, core values, 8 daily questions, 5 habits, 8 wheel areas
 - Created: 2026-Q3 retreat, 2026-09-10 daily note
 - 230 files, 12 plugins included (Dataview, Templater, QuickAdd, Kanban, Tasks, etc.)
+
+
+## [2026-09-11] ingest | Python Face Detection from Scratch (OpenCV + YOLO + Webcam)
+- Source: YouTube video by Python Simplified (from Clippings/)
+- Created: [[Python Face Detection from Scratch (OpenCV + YOLO + Webcam)]] (source summary)
+- Entities already existed: [[Python Simplified]], [[OpenCV]], [[YOLO]], [[Ultralytics]]
+- Updated: [[index.md]]
+- Key takeaway: real-time face detection using OpenCV + Ultralytics YOLO via webcam; install YOLOv8n-face model, GPU acceleration with CUDA, run multiple models simultaneously
+- Total pages touched: 2
+
+## [2026-09-11] ingest | Set Up Hermes Agent for FREE & Unlimited Complete Tutorial
+- Source: YouTube video by Ai with Rajpalsinh (from Clippings/)
+- Created: [[Set Up Hermes Agent for FREE & Unlimited Complete Tutorial]] (source summary)
+- Entities already existed: [[Hermes Agent]], [[OmniRoute]], [[Antigravity]], [[OpenRouter]]
+- Updated: [[index.md]]
+- Key takeaway: Hermes Agent free open-source desktop AI agent; connect to OmniRoute local gateway for 352+ AI providers with auto-fallback; Node.js setup, API key generation, permanent config
+- Total pages touched: 2
+
+## [2026-09-11] ingest | Teach Python to Recognize Your Face (OpenCV + YOLO + Live Camera)
+- Source: YouTube video by Python Simplified (from Clippings/)
+- Created: [[Teach Python to Recognize Your Face (OpenCV + YOLO + Live Camera)]] (source summary)
+- Entities already existed: [[Python Simplified]], [[OpenCV]], [[YOLO]]
+- Created: [[OpenCV LBPH Face Recognizer]] (entity — local face recognition model)
+- Updated: [[index.md]]
+- Key takeaway: face RECOGNITION (not just detection); train OpenCV LBPH model on your own photos; label familiar vs unknown faces; everything runs locally with no cloud dependency
+- Total pages touched: 3
