@@ -2,6 +2,13 @@
 
 Chronological record of wiki activity. Append-only.
 
+## [2026-09-08] ingest | I used GPT-6 Astra for FREE
+- Source: YouTube video by Java Goat
+- Created: [[I used GPT-6 Astra for FREE]] (source summary)
+- Created: [[Puter.js]], [[InfinityFree]] (entities)
+- Created: [[Free AI Dev Stack]] (concept)
+- Updated: [[index.md]]
+
 ## [2026-09-02] ingest | How I build an AI Second Brain in 11 Minutes
 - Source: YouTube video by Praful Sharma
 - Created: [[How I Build an AI Second Brain]] (source summary)
@@ -207,3 +214,68 @@ Chronological record of wiki activity. Append-only.
 - Key takeaway: retrieve-don't-build pattern (89k-skill MCP, 280-agent repo, 2000-style MD files) + bracket-tag directing for voice AND body + FDE ladder from deterministic code to GPT
 - Moved to: raw/processed/
 - Total pages touched: 7
+
+## [2026-09-10] ingest | Jack Roberts Shorts — individual source pages (8 files)
+- Source: 8 YouTube Shorts by Jack Roberts (raw/processed/)
+- Created: [[89000 AI Skills for You to Steal]] (Skill Retrieval MCP — 89K skills, search engine pattern)
+- Created: [[Clone Any Website Using This FREE Github Repo]] (screenshot → React/Vue/HTML, design-first workflow)
+- Created: [[Never Edit Your Videos Manually Again]] (Chat Cut — AI video editor in Claude Code, timeline + motion graphics)
+- Created: [[Refero Styles]] (2K design styles as MD files, AI-readable, 10s apply)
+- Created: [[Use Fish Audio to Direct Every Line of Your AI Voice]] (Fish Audio TTS, bracket directing, 83 languages)
+- Created: [[Agency Agents]] (280 specialist AI employees, free local install)
+- Created: [[apple-design]] (Claude skill with Apple's design rules, 31K stars)
+- Created: [[claude-video]] (teach Claude from YouTube tutorials, save as skill)
+- Created entities: [[Skill Retrieval MCP]], [[Chat Cut]], [[Refero Styles]], [[Agency Agents]], [[apple-design]], [[Claude Video]]
+- Updated: [[index.md]], [[Jack Roberts]] (sources list)
+- Key insight: retrieve-don't-build is the dominant pattern — skills, styles, agents, workflows all retrieved not invented
+- Total pages touched: 16
+
+## [2026-09-09] ingest | God's Eye View Walkthrough
+- Source: YouTube walkthrough by Bilawal Sidhu (Clippings/)
+- Created: [[God's Eye View Walkthrough]] (source summary)
+- Created: [[Bilawal Sidhu]], [[God's Eye View]] (entities)
+- Created: [[Open-Source OSINT Visualization]] (concept)
+- Updated: [[index.md]]
+- Key takeaway: open-source 3D globe with live ADS-B/AIS/FIRMS/USGS data, voice control, camera tours, used for Nepal flood reconstruction; data gaps in vessel coverage (needs satellite AIS)
+- Moved to: raw/processed/
+- Total pages touched: 6
+
+## [2026-09-09] ingest | God's Edge View MCP Integration
+- Session clipping: built MCP server connecting OpenCode to God's Edge View
+- Created: [[God's Edge View MCP Integration]] (source summary)
+- Updated: [[index.md]]
+- Components: MCP server (10 tools), Command API (HTTP+WS), Browser client
+- Working: fly_to, get_state, nepal_flood_map, animate_flood (12s), clear_annotations
+- Pending: flood_reconstruction GeoJSON layer (code written, needs browser refresh test)
+- Architecture: OpenCode → stdio MCP → HTTP :4174 → WebSocket → Cesium viewer
+
+## [2026-09-10] ingest | Building AI Agents in Pure Python
+- Source: YouTube tutorial by Tech With Tim
+- Created: [[Building AI Agents in Pure Python]] (source summary)
+- Created: [[Tech With Tim]] (entity)
+- Created: [[Pure Python AI Agents]] (concept)
+- Updated: [[index.md]]
+- Key takeaway: 3-step agent architecture (API call → conversation history → tool calling), no frameworks needed
+
+## [2026-09-10] ingest | I built an obsidian second brain that runs my life
+- Source: YouTube video by Daniel Agrici
+- Created: [[I built an obsidian second brain that runs my life]] (source summary)
+- Created: [[Daniel Agrici]], [[Mike Schmitz]] (entities)
+- Created: [[Compass Life OS]] (concept)
+- Updated: [[index.md]]
+- Key takeaway: Compass vault template — local first, AI agent integration, Wheel of Life, 16 agent prompts, AGENTS.md
+
+## [2026-09-10] ingest | Vibe Coding Has A Security Problem
+- Source: YouTube video by Tech With Tim
+- Created: [[Vibe Coding Has A Security Problem]] (source summary)
+- Created: [[Shadow AI]] (concept)
+- Updated: [[index.md]]
+- Key takeaway: 65% of AI-built apps have security holes; IDOR, broken access controls; platform-level enforcement fixes it
+
+## [2026-09-10] build | Life OS Vault Created
+- Source: Compass template by Daniel Agrici (GitHub: AgriciDaniel/compass)
+- Built at: `E:\obsidian\life-os`
+- Pushed to: https://github.com/Gongwasubash/life-os
+- Configured: life theme, core values, 8 daily questions, 5 habits, 8 wheel areas
+- Created: 2026-Q3 retreat, 2026-09-10 daily note
+- 230 files, 12 plugins included (Dataview, Templater, QuickAdd, Kanban, Tasks, etc.)

@@ -4,6 +4,19 @@ Content-oriented catalog of everything in the wiki. Updated on every ingest.
 
 ## Sources
 
+- [[89000 AI Skills for You to Steal]] — Jack Roberts: Skill Retrieval MCP with 89K+ skills from Anthropic guides and community
+- [[Clone Any Website Using This FREE Github Repo]] — Jack Roberts: screenshot-to-code repo that generates React/Vue/HTML from one image
+- [[Never Edit Your Videos Manually Again]] — Jack Roberts: Chat Cut, AI video editor inside Claude Code with timeline + motion graphics
+- [[Refero Styles]] — Jack Roberts: 2,000+ design styles as MD files, AI-readable, apply to sites in ~10s
+- [[Use Fish Audio to Direct Every Line of Your AI Voice]] — Jack Roberts: Fish Audio TTS with per-line bracket directing, 83 languages
+- [[Agency Agents]] — Jack Roberts: 280 specialist AI employees (engineers, designers, marketers, lawyers), free local install
+- [[apple-design]] — Jack Roberts: free Claude skill with Apple's real design rules, 31K GitHub stars
+- [[claude-video]] — Jack Roberts: teach Claude any skill from YouTube tutorials, saves as reusable skill
+- [[I used GPT-6 Astra for FREE]] — Java Goat: free GPT-6 Astra via Puter.js + Google AI Studio + InfinityFree + Three.js to build polished 3D games in minutes
+- [[God's Edge View MCP Integration]] — session clipping: MCP server connecting OpenCode to God's Edge View globe for natural language control of Cesium
+- [[Building AI Agents in Pure Python]] — Tech With Tim: beginner course on building AI agents from scratch in pure Python (3 steps: API call, conversation history, tool calling)
+- [[I built an obsidian second brain that runs my life]] — Daniel Agrici: Compass Life OS vault template, local-first Obsidian system with AI agent integration
+- [[Vibe Coding Has A Security Problem]] — Tech With Tim: 65% of AI-built apps have security holes; demonstrated IDOR, shadow AI, platform-level fixes
 - [[How I Build an AI Second Brain]] — YouTube tutorial by Praful Sharma on building a second brain with Obsidian + Codex using Karpathy's LLM Wiki pattern
 - [[Most People Never Use AI Like This]] — YouTube tutorial on building a Hidden Variable Engine with 5 AI agents to find blind spots
 - [[How I use AI to find Unique Business Ideas]] — YouTube tutorial on building an Infinite Opportunity Hunter that finds personalized business opportunities weekly
@@ -25,9 +38,16 @@ Content-oriented catalog of everything in the wiki. Updated on every ingest.
 - [[Storyboard to AI UGC Ad]] — Klever Nuts AI storyboard → Flow Agent auto-split clips, ID-sheet character, voice-changer polish
 - [[Jack Roberts Shorts Batch]] — 8 free-tool shorts: skill-retrieval MCP, 280 agent employees, Apple-design skill, Chat Cut, Refero Styles, Fish Audio
 - [[FDE Course GenAI Basics]] — Coder Army Hindi lecture: deterministic code → ML classification → transformers → GPT
+- [[God's Eye View Walkthrough]] — Bilawal Sidhu's open-source 3D globe: live flights, ships, CCTV, fires, earthquakes, voice control, camera tours
 
 ## Entities
 
+- [[Skill Retrieval MCP]] — MCP search engine for 89K+ AI skills from Anthropic guides + community
+- [[Chat Cut]] — AI video editor inside Claude Code with timeline, motion graphics, skill saving
+- [[Refero Styles]] — 2,000+ design styles as MD files for AI-readable design replication
+- [[Agency Agents]] — 280 specialist AI employees, free local install
+- [[apple-design]] — Claude skill encoding Apple's design principles, 31K GitHub stars
+- [[Claude Video]] — teaches Claude skills from YouTube tutorials (transcript + visuals)
 - [[Andrej Karpathy]] — former OpenAI co-founder, creator of the LLM Wiki pattern
 - [[Praful Sharma]] — YouTuber who demonstrated the second brain setup
 - [[Obsidian]] — offline markdown notes app used as the "IDE" for the wiki
@@ -46,6 +66,9 @@ Content-oriented catalog of everything in the wiki. Updated on every ingest.
 - [[GrowthSchool]] — ed-tech company, AI upskilling (founded by Vaibhav Sisinty)
 - [[Metricool]] — social media scheduler with API, used as data harvesting layer for AI agents
 - [[Piyush Garg]] — Indian tech educator, Node.js/GenAI instructor, creator of Manufact MCP toolkit videos
+- [[Tech With Tim]] — Python/AI educator, builds agents from scratch, covers security of AI-built apps
+- [[Daniel Agrici]] — built Compass Life OS, free Obsidian vault template for running life from Obsidian
+- [[Mike Schmitz]] — Practical PKM creator, inspired Compass Life OS system
 - [[Why So Offended ?]] — Nepali YouTube explainer channel, long-form disaster/current-affairs documentaries
 - [[Binayak Kuikel]] — co-writer of WSO's Bhote Koshi flood documentary
 - [[Bhote Koshi Flood 2026]] — Bhadra-10 glacial-collapse flash flood that erased Timure market
@@ -57,6 +80,11 @@ Content-oriented catalog of everything in the wiki. Updated on every ingest.
 - [[Jack Roberts]] — short-form free-AI-tool educator
 - [[Fish Audio]] — voice clone + per-line bracket direction, 83 languages
 - [[Coder Army]] — Hindi FDE lecture series (GenAI → Agents → Vector DBs)
+- [[Java Goat]] — Hindi AI tutorial creator (free dev stack, Three.js games)
+- [[Bilawal Sidhu]] — creator/engineer, ex-Google PM, TED tech curator, a16z scout, built God's Eye View
+- [[God's Eye View]] — open-source 3D globe OSINT tool: flights, ships, CCTV, fires, earthquakes, voice control
+- [[Puter.js]] — free browser-based AI API proxy (GPT-6 Astra, no key needed)
+- [[InfinityFree]] — free .nf static hosting, no credit card
 
 ## Concepts
 
@@ -81,6 +109,11 @@ Content-oriented catalog of everything in the wiki. Updated on every ingest.
 - [[Agent Council]] — multiple AI models verifying each other to prevent bias and cheating
 - [[Graph Engineering]] — isolated agent systems with specific tasks and cross-verification
 - [[MCP (Model Context Protocol)]] — universal protocol for AI assistants to connect to external tools and data
+- [[Free AI Dev Stack]] — zero-cost full-stack pipeline: Puter.js + Google AI Studio + InfinityFree + Three.js
+- [[Open-Source OSINT Visualization]] — using open-source data feeds + 3D globe tools for real-world monitoring
+- [[Shadow AI]] — employees using unapproved AI tools, 65% of AI-built apps have security holes
+- [[Compass Life OS]] — free Obsidian vault template for running life from Obsidian (wheel of life, habits, AI agent)
+- [[Pure Python AI Agents]] — building agents from scratch without frameworks: API call → conversation history → tool calling
 - [[Manufact MCP Toolkit]] — full-stack toolkit for building, deploying, and monitoring MCP servers
 - [[Glacial Collapse Flood]] — rainless flood from falling glacier ice + bedrock liquefying into a debris surge
 - [[Early Warning Failure]] — forecast existing but alert too late and without scale: detection, dissemination, coordination gaps
