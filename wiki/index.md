@@ -125,6 +125,8 @@ Content-oriented catalog of everything in the wiki. Updated on every ingest.
 - [[Consistent AI Character]] — locked face + voice + behavior across clips for AI presenter series
 - [[Viral Style Repurposing]] — keep a proven video's visual DNA, swap in your own narration
 
+- [[OpenCV LBPH Face Recognizer]] — local face recognition model (LBPH texture descriptors, runs on CPU, no cloud)
+
 ## Analyses
 
 - [[Personality Profile]] — living resume built from second brain data
