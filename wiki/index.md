@@ -40,6 +40,9 @@ Content-oriented catalog of everything in the wiki. Updated on every ingest.
 - [[FDE Course GenAI Basics]] — Coder Army Hindi lecture: deterministic code → ML classification → transformers → GPT
 - [[God's Eye View Walkthrough]] — Bilawal Sidhu's open-source 3D globe: live flights, ships, CCTV, fires, earthquakes, voice control, camera tours
 
+- [[Python Face Detection from Scratch (OpenCV + YOLO + Webcam)]] — Python Simplified: real-time face detection with OpenCV, Ultralytics YOLO, webcam, GPU acceleration
+- [[Set Up Hermes Agent for FREE & Unlimited Complete Tutorial]] — Ai with Rajpalsinh: Hermes Agent install, OmniRoute local gateway, 352+ AI providers with auto-fallback
+- [[Teach Python to Recognize Your Face (OpenCV + YOLO + Live Camera)]] — Python Simplified: train OpenCV LBPH model on your own photos, real-time face recognition, familiar vs unknown
 ## Entities
 
 - [[Skill Retrieval MCP]] — MCP search engine for 89K+ AI skills from Anthropic guides + community
