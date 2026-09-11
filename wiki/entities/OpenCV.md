@@ -48,4 +48,5 @@ Open Source Computer Vision Library. Popular Python library for image and video 
 - [[Ultralytics]]
 - [[Face Detection]]
 - [[Face Recognition]]
+- [[OpenCV LBPH Face Recognizer]]
 - [[Computer Vision]]
